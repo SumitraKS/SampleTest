@@ -1,0 +1,29 @@
+<project name="FitnessFixture" default='compile' basedir=".">
+
+	<property name="output.dir" value="bin" />
+	<property name="lib.dir" value="lib" />
+	<property name="src.dir" value="src" />
+	<property name="name" value="FitnessFixture" />
+
+
+	<path id='compile.classpath'>
+		<fileset dir="${lib.dir}">
+			<include name='*.jar' />
+		</fileset>
+	</path>
+
+
+	<target name='clean' description="Delete all build artifacts.">
+		<delete dir="${output.dir}" />
+		<mkdir dir="${output.dir}" />
+	</target>
+
+	<target name='compile' description='Compile source files and place beside source.'
+		depends='clean'>
+		<javac target="1.8" source="1.8" destdir="${output.dir}"
+			includeantruntime="false" srcdir="${src.dir}">
+			<classpath refid='compile.classpath' />
+		</javac>
+	</target>
+
+</project>

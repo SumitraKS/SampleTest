@@ -1,0 +1,11 @@
+!path FitnesseFixture
+
+!|MyFixture|
+|memberName|greeting?| 
+|Name1|Hello Name1. Today is Tuesday.|
+|Name2|Hello Name2. Today is Tuesday.|
+|Name3|Hello Name3. Today is Tuesday.|
+|Name4|Hello Name4. Today is Tuesday.|
+|Name5|Hello Name5|
+|Name6|Hello Name6|
+|Name7|Hello Name7|
