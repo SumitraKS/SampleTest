@@ -6,6 +6,6 @@
 |Name2|Hello Name2. Today is Tuesday.|
 |Name3|Hello Name3. Today is Tuesday.|
 |Name4|Hello Name4. Today is Tuesday.|
-|Name5|Hello Name5|
-|Name6|Hello Name6|
-|Name7|Hello Name7|
+|Name5|Hello Name5. Today is Tuesday.|
+|Name6|Hello Name6. Today is Tuesday.|
+|Name7|Hello Name7. Today is Tuesday.|
