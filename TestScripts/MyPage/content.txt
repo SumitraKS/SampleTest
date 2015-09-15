@@ -1,4 +1,4 @@
-!path FitnesseFixture
+!path FitnesseFixture/bin
 
 !|MyFixture|
 |memberName|greeting?| 
