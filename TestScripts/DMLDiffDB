@@ -1,0 +1,16 @@
+!path lib/*.jar
+!|dbfit.OracleTest|
+
+!define SQL {select * from poctest2} 
+
+!|Connect|jdbc:oracle:thin:pocuser/pocpwd@localhost:1521:orcl| 
+!|Store Query|${SQL}|UPGRADED| 
+
+!|Connect|jdbc:oracle:thin:testuser/testpwd@localhost:1521:orcl| 
+!|Store Query|${SQL}|FROMSCRIPT| 
+
+|compare stored queries|UPGRADED|FROMSCRIPT| 
+|COL3?|COL4?|
+|3|name3|
+|4|name4|
+|100|my100|
