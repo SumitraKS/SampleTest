@@ -1,6 +1,7 @@
 !path lib/*.jar
 !|dbfit.OracleTest|
 !|connect|localhost:1521|pocuser|pocpwd|orcl|
+
 !|query|select * from tab|
 |TNAME|Tabtype?|
 |POCTEST1|TABLE|
