@@ -1,0 +1,17 @@
+!path lib/*.jar
+!|dbfit.OracleTest|
+!|connect|localhost:1521|pocuser|pocpwd|orcl|
+
+!|query|select * from tab|
+|TNAME|Tabtype?|
+|POCTEST1|TABLE|
+|POCTEST2|TABLE|
+|POCTEST3|TABLE|
+|POCTEST4|TABLE|
+
+!|query|SELECT distinct atc.column_name as name, atc.data_type as type, atc.data_length as length FROM all_tab_columns atc,(SELECT * FROM all_objects WHERE object_name like 'POCTEST2' and object_type in ('TABLE')) obj WHERE atc.table_name = obj.object_name ORDER BY atc.column_name|
+|name|type?|length?|
+|COL3|NUMBER|22|
+|COL4|VARCHAR2|20|
+|COLUMN1|NUMBER|22|
+|COLUMN2|VARCHAR2|20|
